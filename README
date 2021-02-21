@@ -1,0 +1,61 @@
+ayeletavr
+
+
+=============================
+=      File description     =
+=============================
+Spaceship.java
+Locker.java
+LongTermStorage.java
+LockerTest.java
+LongTermTest.java
+SpaceshipTest.java
+BoopingSite.java
+BoopingSiteTest.java
+HotelComprators.java
+README
+
+
+
+=============================
+=          Design           =
+=============================
+Spaceship:
+A spaceship object carries crew members, lockers and a long-term storage.
+Each object was implemented in a different class, even tough a locker and a long-tem storage has similar methods.
+
+BoopingSite:
+BoopingSite has 3 different sorting-hotels methods, that were implemented in BoopingSite.
+I used Comprators, and also used three helper methods: 2 were implemented in HotelComprator,
+and 1 in BoopingSite.
+
+=============================
+=  Implementation details   =
+=============================
+As described above.
+
+=============================
+=    Answers to questions   =
+=============================
+i stored my information (both locker and LongTermLocker) by creating a counter for each legal item. It takes less memory that storing the items in arrays.
+
+=============================
+=    Resubmission   =
+=============================
+I resubmitted my assignment with changes of this lines: (also marked as comments as xxx)
+SpaceshipTest.java - lines 36 and 46.
+LockerTest.java - lines 47, 58, 64, 73, 75,77,83,89,95
+LongTermTest.java - line 43
+LongTermStorage.java - line 90
+BoopingSiteTest.java - line 7,21,38 (deleted runtime = 60).
+BoopingSite.java - line 64.
+
+total change of 17 lines.
+
+Main changes that I did:
+1. I removed to my test annotations this command (runtime = 60) because I found out it is measured in ms and not in s,
+and this command made my tests throw an exception.
+2. I got confused and wrote most of my test in SpaceshipDepositoryTest with illegal objects
+(for example - "plate" which is an object that I invented..).
+From this reason I cannot run the whole SpaceshipTest, I would appreciate if you will consider that in mind.
+3. I made a few changes in BoopingSiteTest.
